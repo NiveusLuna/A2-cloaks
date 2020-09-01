@@ -1,0 +1,100 @@
+#include "turret.odf"
+
+//**********************************************************************
+//MAIN DESIGN PARAMETERS
+
+//Name of Ship class in Ship Display window & in edit mode & tooltip
+unitName = "Plasma Cannon"
+
+//tooltips
+tooltip = "ROM_TURRET"
+verboseTooltip = "ROM_TURRET_V"
+
+//Race which can build ship & starting race of ship
+race = "romulan"
+
+//Amount of time required to build ship
+buildTime = 45.0
+
+//Number of officers required to build this ship
+officerCost = 3
+
+//Dilithium Cost to build
+dilithiumCost = 75
+
+//Metal cost to build
+metalCost = 75
+
+//Max Shield Strength & Begining Shield Strength <1000
+maxHealth = 400
+
+//Rate at which shield recharges (points per second... we think)
+shieldRate = 1.5
+
+//**********************************************************************
+//AI system parameters
+//These parameters influence how the AI evaluates and compares craft.
+
+//An abstract number that represents how much extra strength must be
+//used to attack this craft due to its weapons. 
+// (0.0=no weapons, 0.5 = average weapons, 1.0=many good weapons)
+attackPower = 0.50f
+
+//The normalized intrinsic value of a target.  High value craft make good
+//attack targets. (0.0=lowest value, 1.0=highest value)
+intrinsicValue = 0.50f
+
+
+//**********************************************************************
+
+
+//**********************************************************************
+//SYSTEM HITPOINTS
+//These values are the hitpoint values of the systems
+//If the value is set to zero the ship does not have that system
+weaponsHitPoints = 333
+//**********************************************************************
+
+
+//**********************************************************************
+//ART PARAMETERS & WEAPON NAMES
+
+// Pulse Phaser
+weapon1 = "rtpulse"
+weaponHardpoints1 = "hp01" "hp02" "hp03"
+
+// Hardpoints to hit for various systems and other locations.
+enginesTargetHardpoints = "hp04" "hp05" "hp06" 
+lifeSupportTargetHardpoints = "hp04" "hp05" "hp06" 
+weaponsTargetHardpoints = "hp04" "hp05" "hp06" 
+shieldGeneratorTargetHardpoints = "hp04" "hp05" "hp06" 
+sensorsTargetHardpoints ="hp04" "hp05" "hp06" 
+hullTargetHardpoints = "hp04" "hp05" "hp06" 
+criticalTargetHardpoints = "hp04" "hp05" "hp06" 
+
+//**********************************************************************
+
+
+//**********************************************************************
+//MESSAGE & SOUND PARAMETERS
+//**********************************************************************
+
+eventSelect = "PhaserTurretSelect"
+eventAcknowledge = "PhaserTurretAcknowledge"
+eventAttack = "PhaserTurretAttack"
+eventDecommission = "PhaserTurretDecommission"
+
+
+//**********************************************************************
+//KEYMAP LABEL
+// Obsolete, use hotkeyLabel
+// keymapLabel = "phaser_turret"
+hotkeyLabel = "HOTKEY_F4"
+
+//************************************************************
+// Brian additions for context sensitive menus
+alert = 1
+
+//scan range in meters
+rangeScan = 800.0f
+

@@ -1,0 +1,7 @@
+#include "rsensor.odf"
+
+
+//WEAPONS & ART PARAMETERS
+
+// Cloaking Device
+weapon2 = "grcloak-turret"

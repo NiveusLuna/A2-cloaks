@@ -1,0 +1,4 @@
+// Include Cardassian standard cloak.
+#include "grcloak.odf"
+
+initialCloak = 1

@@ -1,0 +1,6 @@
+// Include Romulan standard cloak.
+#include "grcloak.odf"
+
+initialCloak = 1
+disableWeapons = 0
+specialEnergyCost = null

@@ -1,0 +1,8 @@
+#include "rscout.odf"
+
+//**********************************************************************
+//ART PARAMETERS & WEAPON NAMES
+
+// Cloaking Device
+weapon3 = "grcloak-scout"
+weaponHardpoints3 = "hp05"

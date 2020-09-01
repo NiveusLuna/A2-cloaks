@@ -1,0 +1,5 @@
+// Include Cardassian standard cloak.
+#include "gccloak.odf"
+
+initialCloak = 1
+specialEnergyCost = null

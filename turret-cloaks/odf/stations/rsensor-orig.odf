@@ -1,0 +1,100 @@
+#include "turret.odf"
+
+//**********************************************************************
+//MAIN DESIGN PARAMETERS
+
+//Name of Ship class in Ship Display window & in edit mode & tooltip
+unitName = "Spy Satellite"
+
+//tooltips
+tooltip = "ROM_SENSOR"
+verboseTooltip = "ROM_SENSOR_V"
+
+//Race which can build ship & starting race of ship
+race = "romulan"
+
+//Amount of time required to build ship
+buildTime = 25.0
+
+//Number of officers required to build this ship
+officerCost = 2
+
+//Dilithium Cost to build
+dilithiumCost = 100
+
+//Metal cost to build
+metalCost = 50
+
+//Max Shield Strength & Begining Shield Strength <1000
+maxHealth = 400
+
+//Rate at which shield recharges (points per second... we think)
+shieldRate = 1.0
+
+//This is the range in meters which the ships sensors can see (LOS)
+rangeScan = 1350.0f
+
+//**********************************************************************
+//WEAPONS & ART PARAMETERS
+
+// Detect Cloak
+weapon1 = "gdetectr"
+weaponHardpoints1 = "hp01" "hp02"
+
+// Cloaking Device
+//weapon2 = "gcloak"
+//weaponHardpoints2 = "hp05" 
+
+
+// Hardpoints to hit for various systems and other locations.
+enginesTargetHardpoints = "hp03" "hp04" "hp06" "hp07" "hp08" "hp09" "hp10"
+lifeSupportTargetHardpoints = "hp03" "hp04" "hp06" "hp07" "hp08" "hp09" "hp10"
+//weaponsTargetHardpoints = "hp03" "hp04" "hp06" "hp07" "hp08" "hp09" "hp10"
+shieldGeneratorTargetHardpoints = "hp03" "hp04" "hp06" "hp07" "hp08" "hp09" "hp10"
+sensorsTargetHardpoints = "hp03" "hp04" "hp06" "hp07" "hp08" "hp09" "hp10"
+hullTargetHardpoints = "hp03" "hp04" "hp06" "hp07" "hp08" "hp09" "hp10"
+criticalTargetHardpoints = "hp03" "hp04" "hp06" "hp07" "hp08" "hp09" "hp10"
+
+//**********************************************************************
+//AI system parameters
+//These parameters influence how the AI evaluates and compares craft.
+attackPower = 0.0f
+
+//The normalized intrinsic value of a target.  High value craft make good
+//attack targets. (0.0=lowest value, 1.0=highest value)
+intrinsicValue = 0.05f
+
+
+//**********************************************************************
+// Tara additions for context sensitive menus
+combat = 0
+
+
+//**********************************************************************
+//SYSTEM HITPOINTS
+
+// Hitpoints
+
+shieldGeneratorHitPoints = 300
+enginesHitPoints = 0
+weaponsHitPoints = 300
+lifeSupportHitPoints = 300
+sensorsHitPoints = 300
+
+//**********************************************************************
+
+
+//**********************************************************************
+//MESSAGE & SOUND PARAMETERS
+//**********************************************************************
+
+eventSelect = "SensorSelect"
+eventAcknowledge = "SensorAcknowledge"
+eventDecommission = "SensorDecommission"
+
+
+//**********************************************************************
+//KEYMAP LABEL
+// Obsolete, use hotkeyLabel
+// keymapLabel = "sensor_turret"
+hotkeyLabel = "HOTKEY_F3"

@@ -1,0 +1,81 @@
+#include "cargo.odf"
+
+//MAIN DESIGN PARAMETERS
+
+//Race which can build ship & starting race of ship
+race = "cardassian"
+
+//Name of Ship class in Ship Display window & in edit mode & tooltip
+unitName = "Cargo Ship"
+
+//tooltips
+tooltip = "CARD_CARGO"
+verboseTooltip = "CARD_CARGO_V"
+
+//Amount of time required to build ship
+buildTime = 20.0
+
+//Number of officers required to build this ship
+officerCost = 4
+
+//Number of crew required to build ship & Starting crew
+crewCost = 100
+
+//Dilithium Cost to build
+dilithiumCost = 200
+
+//Metal Cost to build
+metalCost = 0
+
+//Max Shield Strength & Begining Shield Strength <500
+maxHealth = 250
+
+// Hitpoints
+
+shieldGeneratorHitPoints = 80
+enginesHitPoints = 30
+weaponsHitPoints = 30
+lifeSupportHitPoints = 40
+sensorsHitPoints = 60
+
+//Rate at which shield recharges (points per second... we think)
+shieldRate = 2.5
+
+//**********************************************************************
+//SHIP NAMES
+
+//Possible Craft Names
+possibleCraftNames = 
+	"Drilga" "Somollyn" "Belraena" "Yanaste"
+	"Chelphrae" "Erelda" "Gaunna" "Ardiinida"
+	"Yamouroos" "Wunathrae" "Chellaele" "Quave"
+	"Brulithra" "Pharn" "Wolithra" "Diirahc"
+	"Chardna" "Krune" "Arilrae" "Dirlice"
+	"Rysta" "Sharleena" "Elvanrar" "Met"
+
+//**********************************************************************
+//ART PARAMETERS & WEAPON NAMES
+
+//Cloaking Device
+weapon1 = "gccloak"
+
+//Hardpoints to hit for various systems and other locations.
+enginesTargetHardpoints = "hp01" "hp02" "hp03" "hp04" "hp05"
+lifeSupportTargetHardpoints = "hp02" "hp04" "hp06" "hp08" "hp10"
+weaponsTargetHardpoints = "hp01" "hp03" "hp05" "hp07" "hp09"
+shieldGeneratorTargetHardpoints = "hp06" "hp07" "hp08" "hp09" "hp10"
+sensorsTargetHardpoints =  "hp01" "hp02" "hp03" "hp04" "hp05"
+hullTargetHardpoints = "hp02" "hp04" "hp06" "hp08" "hp10"
+criticalTargetHardpoints =  "hp01" "hp03" "hp05" "hp07" "hp09"
+
+
+//**********************************************************************
+//CREW STATUS MULTIPLIERS
+//The multiplier for the delay between shots for weapons while in yellow status
+weaponYellow = 1.0f
+
+//The multiplier for the delay between shots for weapons while in red status
+weaponRed = 2.0f
+//**********************************************************************
+
+hotkeyLabel = "HOTKEY_F3"

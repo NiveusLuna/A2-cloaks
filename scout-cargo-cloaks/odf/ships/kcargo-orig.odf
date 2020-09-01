@@ -1,0 +1,84 @@
+#include "cargo.odf"
+
+//MAIN DESIGN PARAMETERS
+
+//Race which can build ship & starting race of ship
+race = "klingon"
+
+//Name of Ship class in Ship Display window & in edit mode & tooltip
+unitName = "Cargo Ship"
+
+//tooltips
+tooltip = "KLI_CARGO"
+verboseTooltip = "KLI_CARGO_V"
+
+//Amount of time required to build ship
+buildTime = 20.0
+
+//Number of officers required to build this ship
+officerCost = 4
+
+//Number of crew required to build ship & Starting crew
+crewCost = 100
+
+//Dilithium Cost to build
+dilithiumCost = 200
+
+//Metal Cost to build
+metalCost = 0
+
+//Max Shield Strength & Begining Shield Strength <500
+maxHealth = 250
+
+// Hitpoints
+
+shieldGeneratorHitPoints = 45
+enginesHitPoints = 45
+weaponsHitPoints = 60
+lifeSupportHitPoints = 45
+sensorsHitPoints = 45
+
+//Rate at which shield recharges (points per second... we think)
+shieldRate = 2.5
+
+//**********************************************************************
+//SHIP NAMES
+
+//Possible Craft Names
+possibleCraftNames = 
+	"IKS Beht'tlh" "IKS Qi'Tu" "IKS Tugh Ghu'maj" "IKS DuQmoHmo"
+ 	"IKS Hoch Suvwl'Hugh" "IKS LunoHlaH" "IKS MorghmeH" "IKS Qu'atlh Sqo"
+	"IKS HarQo" "IKS Hergwl'e" "IKS Qong Quch'ong" "IKS Ta'Daq" 
+	"IKS Hlquem" "IKS Ta'qa'oH" "IKS Oh Doch'e" "IKS Samta'meH"
+	"IKS Du'uy neH" "IKS GhopeghHa" "IKS JoHwl" "IKS Vaj jIQuch"
+	"IKS Lam Mojqa" "IKS Mughato' rurta" "IKS Chay'jangIS" "IKS Nem Guhp"
+
+
+
+//**********************************************************************
+//ART PARAMETERS & WEAPON NAMES
+
+// Phaser
+weapon1 = "kcsphas"
+weaponHardpoints1 = "hp01" "hp02" "hp03"
+
+//Hardpoints to hit for various systems and other locations.
+enginesTargetHardpoints = "hp06" "hp07" "hp08" "hp09" "hp10"
+lifeSupportTargetHardpoints = "hp11" "hp12" "hp13" "hp14" "hp15"
+weaponsTargetHardpoints = "hp01" "hp02" "hp03" "hp13" "hp11"
+shieldGeneratorTargetHardpoints = "hp16" "hp17" "hp18" "hp19" "hp20"
+sensorsTargetHardpoints = "hp21" "hp22" "hp23" "hp24" "hp25"
+hullTargetHardpoints = "hp06" "hp08" "hp10"  "hp12" "hp14" "hp16" "hp18" "hp20" "hp24" "hp25"
+criticalTargetHardpoints = "hp07" "hp09" "hp11" "hp13" "hp17" "hp19" "hp22" "hp23"
+//**********************************************************************
+//CREW STATUS MULTIPLIERS
+//The multiplier for the delay between shots for weapons while in yellow status
+weaponYellow = 1.0f
+
+//The multiplier for the delay between shots for weapons while in red status
+weaponRed = 2.0f
+//**********************************************************************
+combat = 1
+can_sandd = 1
+
+hotkeyLabel = "HOTKEY_F3"

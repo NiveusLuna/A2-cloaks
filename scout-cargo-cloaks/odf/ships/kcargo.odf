@@ -1,0 +1,7 @@
+#include "kcargo.odf"
+
+//**********************************************************************
+//ART PARAMETERS & WEAPON NAMES
+
+// Cloak
+weapon2 = "gkcloak-cargo"

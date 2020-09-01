@@ -1,0 +1,8 @@
+#include "cscout.odf"
+
+
+//**********************************************************************
+//ART PARAMETERS & WEAPON NAMES
+
+//Cloaking Device
+weapon2 ="gccloak-scout"

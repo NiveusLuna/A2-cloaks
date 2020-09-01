@@ -1,0 +1,5 @@
+// Include Klingon standard cloak.
+#include "gkcloak.odf"
+
+initialCloak = 1
+specialEnergyCost = null

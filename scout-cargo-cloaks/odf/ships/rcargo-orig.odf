@@ -1,0 +1,96 @@
+#include "cargo.odf"
+
+//MAIN DESIGN PARAMETERS
+
+//Race which can build ship & starting race of ship
+race = "romulan"
+
+//Name of Ship class in Ship Display window & in edit mode & tooltip
+unitName = "Romulan Cargo Class"
+
+//tooltips
+tooltip = "ROM_CARGO"
+verboseTooltip = "ROM_CARGO_V"
+
+//Amount of time required to build ship
+buildTime = 20.0
+
+//Number of officers required to build this ship
+officerCost = 4
+
+//Number of crew required to build ship & Starting crew
+crewCost = 100
+
+//Dilithium Cost to build
+dilithiumCost = 200
+
+//Metal Cost to build
+metalCost = 0
+
+//Max Shield Strength & Begining Shield Strength <250
+maxHealth = 250
+
+// Hitpoints
+
+shieldGeneratorHitPoints = 75
+enginesHitPoints = 25
+weaponsHitPoints = 50
+lifeSupportHitPoints = 50
+sensorsHitPoints = 50
+
+// Hitpoints
+
+shieldGeneratorHitPoints = 47
+enginesHitPoints = 60
+weaponsHitPoints = 40
+lifeSupportHitPoints = 45
+sensorsHitPoints = 47
+
+//Rate at which shield recharges (points per second... we think)
+shieldRate = 2.5
+
+//**********************************************************************
+//SHIP NAMES
+
+//Possible Craft Names
+possibleCraftNames = 
+        "Adjunius"   "Agonius"    "Allanius"   "Allius"
+        "Amulus"     "Anis"       "Arcorio"    "Bantius"
+        "Billius"    "Burivius"   "Cabunsius"  "Canestius"
+        "Cantius"    "Cariulx"    "Cero"       "Curontus"
+        "Deccius"    "Diustus"    "Entia"      "Fasinibius"
+        "Faunepius"  "Findius"    "Flotelius"  "Holetiulus"
+        "Hunnus"     "Jalvius"    "Julollia"   "Lalvunius"
+        "Lasudian"   "Lescius"    "Licero"     "Lolvolius"
+        "Mico"       "Moltrio"    "Naevilius"  "Napius"
+        "Nentius"    "Nicatius"   "Noronis"    "Olvia"
+        "Plaedius"   "Ponia"      "Portinius"  "Puvius"
+        "Quitius"    "Raseniulus" "Runctirius" "Scerius"
+        "Stlapilius" "Sullius"    "Suritius"   "Susmas"
+        "Teleius"    "Temetius"   "Tisius"     "Tunishai"
+        "Vestelius"  "Vidanius"   "Vilcunus"   "Visunia"
+        "Vodius"     "Volbonia"   "Vudius"     "Vuprus"
+
+//**********************************************************************
+//ART PARAMETERS & WEAPON NAMES
+
+// Hardpoints to hit for various systems and other locations.
+enginesTargetHardpoints = "hp06" "hp07" "hp08" "hp09" "hp10"
+lifeSupportTargetHardpoints = "hp11" "hp12" "hp13" "hp14" "hp15"
+//weaponsTargetHardpoints =  "hp13" "hp11"
+shieldGeneratorTargetHardpoints = "hp16" "hp17" "hp18" "hp19" "hp20"
+sensorsTargetHardpoints = "hp21" "hp22" "hp23" "hp24" "hp25"
+hullTargetHardpoints = "hp06" "hp08" "hp10"  "hp12" "hp14" "hp16" "hp18" "hp20" "hp24" "hp25"
+criticalTargetHardpoints = "hp07" "hp09" "hp11" "hp13" "hp17" "hp19" "hp22" "hp23"
+
+//**********************************************************************
+//CREW STATUS MULTIPLIERS
+//The multiplier for the delay between shots for weapons while in yellow status
+weaponYellow = 1.0f
+
+//The multiplier for the delay between shots for weapons while in red status
+weaponRed = 2.0f
+//**********************************************************************
+
+//**********************************************************************
+hotkeyLabel = "HOTKEY_F3"

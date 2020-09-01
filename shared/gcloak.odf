@@ -1,0 +1,7 @@
+#include "gcloak.odf"
+
+classLabel = "cloakingdeviceimp"
+decloakShieldDelay = 4.0f
+
+specialenergycost = 0
+

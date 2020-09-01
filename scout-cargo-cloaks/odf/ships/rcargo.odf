@@ -1,0 +1,6 @@
+#include "rcargo.odf"
+
+//ART PARAMETERS & WEAPON NAMES
+
+// Cloaking device
+weapon1 = "grcloak-cargo"

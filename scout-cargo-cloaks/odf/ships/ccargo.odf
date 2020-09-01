@@ -1,0 +1,4 @@
+#include "ccargo.odf"
+
+//Cloaking Device
+weapon1 = "gccloak-cargo"

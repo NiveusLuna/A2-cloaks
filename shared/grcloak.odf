@@ -1,0 +1,16 @@
+// Include standard cloak.
+#include "gcloak-nonfree.odf"
+
+// ROMULAN Specific Cloak.
+
+// Sound which is played when the weapon fires - a.k.a. the ship cloaks.
+fireSound = "clrengag.wav"
+
+// Sound which is played when the weapon turns off - a.k.a. the ship decloaks.
+offSound = "clrdisen.wav"
+
+// Time to reactivate shields upon decloaking
+decloakShieldDelay = 2.0f
+
+// time taken to cloak
+effectTimer = 2.0f
