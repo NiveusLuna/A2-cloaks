@@ -26,7 +26,7 @@ wc_grcloak-scout {
 	- keyboard	Shift
 	- keyboard	Alt
 }
-# Romulan Cargo Ship Cloak
+# Romulan Cargo Ship Phase Cloak
 wc_grcloak-cargo {
 	+ keyboard	BackQuote
 	- keyboard	Control
@@ -67,6 +67,6 @@ wc_gkcloak-cargo {
 }
 
 EXTRA TECHTREE ENTRIES IF USING XML - EITHER/OR DEPENDENCIES
-grcloak-cargo.odf		2	rtrading.odf rompod9.odf	// Romulan cargo ship cloak
+grcloak-cargo.odf		2	rtrading.odf rompod9.odf	// Romulan cargo ship phase cloak
 gccloak-cargo.odf		1	ctrading.odf				// Cardassian cargo ship cloak
 gkcloak-cargo.odf		1	ktrading.odf				// Klingon cargo ship cloak
